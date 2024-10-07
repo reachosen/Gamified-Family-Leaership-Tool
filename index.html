@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Leadership Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gamified Leadership Journal</h1>
+            <div id="userInfo">
+                <span id="username">Leader</span>
+                <span id="level">Level 1</span>
+                <span id="credits">0 Credits</span>
+            </div>
+        </header>
+        <nav>
+            <button id="journalBtn" class="active">Journal</button>
+            <button id="routineBtn">Daily Routine</button>
+            <button id="habitsBtn">Habits</button>
+            <button id="financialBtn">Financial Independence</button>
+            <button id="questsBtn">Quests</button>
+            <button id="achievementsBtn">Achievements</button>
+            <button id="tribeBtn">Tribe</button>
+            <button id="rewardsBtn">Rewards</button>
+        </nav>
+        <main>
+            <div id="journalSection" class="section active">
+                <h2>Leadership Journal</h2>
+                <form id="journalForm">
+                    <input type="date" id="entryDate" required>
+                    <input type="text" id="entryTitle" placeholder="Entry Title" required>
+                    <textarea id="entryContent" placeholder="What happened today?" required></textarea>
+                    <input type="text" id="entryOutcome" placeholder="Primary Outcome" required>
+                    <input type="text" id="entryReason" placeholder="Essential Reason" required>
+                    <input type="text" id="entryEmotions" placeholder="Emotions and Their Impact" required>
+                    <input type="text" id="entryLessons" placeholder="Lessons Learned and Future Actions" required>
+                    <button type="submit">Save Entry</button>
+                </form>
+                <div id="journalEntries"></div>
+            </div>
+            <div id="routineSection" class="section">
+                <h2>Daily Routine</h2>
+                <form id="routineForm">
+                    <input type="text" id="newRoutineItem" placeholder="Add new routine item">
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="routineList"></ul>
+            </div>
+            <div id="habitsSection" class="section">
+                <h2>Habit Tracker</h2>
+                <!-- Habit tracker content -->
+            </div>
+            <!-- Other sections remain unchanged -->
+        </main>
+        <footer>
+            <div id="streakInfo">Current Streak: <span id="currentStreak">0</span> days</div>
+            <div id="progressBar">
+                <div id="progress"></div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

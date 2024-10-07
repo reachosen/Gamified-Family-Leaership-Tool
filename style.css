@@ -1,0 +1,98 @@
+/* Add these styles to your existing CSS */
+
+#journalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#journalForm input,
+#journalForm textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#journalForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#journalForm button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#journalForm button:hover {
+    background-color: #45a049;
+}
+
+#journalEntries {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journalEntry {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.journalEntry h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.journalEntry p {
+    margin: 5px 0;
+}
+
+.journalEntry .entryDate {
+    font-style: italic;
+    color: #666;
+}
+
+/* Existing styles for routines and other sections */
+#routineList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#routineList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#routineList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#routineList li span {
+    flex-grow: 1;
+}
+
+#routineList li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#routineForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#newRoutineItem {
+    flex-grow: 1;
+    margin-right: 10px;
+}
